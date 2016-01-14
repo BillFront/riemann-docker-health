@@ -1,7 +1,7 @@
 FROM ruby:2.2.0
 MAINTAINER tech@billfront.com
 
-RUN git clone https://github.com/yundt/riemann-tools.git
+RUN git clone https://github.com/aphyr/riemann-tools.git
 WORKDIR riemann-tools
 RUN rake gem
 RUN gem install pkg/riemann-tools-0.2.6.gem
